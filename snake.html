@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Snake Game</title>
+  </head>
+
+  <body>
+    <div id="score">0</div>
+    <canvas id="gameBoard" width="400" height="400">Your browser does not support HTML5</canvas> 
+    <div id="overlay">
+      <div id="text">Overlay Text</div>
+      <div id="subText">Sub text</div>
+    </div>
+    <b id = "note">Notes:</b>
+    <p id = "notes">Use WASD or the arow keys to move<br>Press the space bar to pause and resume the game</p>
+    <p id = "notes2">You can press the enter key at anytime to restart<br>Also, the position of the food will move when the game is paused as a form of anti-cheat</p>
+    <style>
+
+      #gameBoard 
+      {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #score
+      {
+        text-align: center;
+        font-size: 140px;
+      }
+
+      #overlay
+      {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(192,192,192); 
+        z-index: 2;
+        cursor: pointer;     
+      }
+
+      #text
+      {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 40px;
+        color: white;
+        transform: translate(-50%,-50%);
+      }
+
+      #subText
+      {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        font-size: 35px;
+        color: white;
+        transform: translate(-50%,-50%);
+      }
+
+      #note
+    {
+      position: absolute;
+      text-align: center;
+      top: 80%;
+      left: 50%;
+      font-size: 25px;
+      transform: translate(-50%, -50%);
+    }
+
+    #notes
+    {
+      position: absolute;
+      text-align: center;
+      top: 84%;
+      left: 50%;
+      font-size: 18px;
+      transform: translate(-50%, -50%);
+    }
+
+    #notes2
+    {
+      position: absolute;
+      text-align: center;
+      top: 89.5%;
+      left: 50%;
+      font-size: 18px;
+      transform: translate(-50%, -50%);
+    }
+
+    </style>
+  </body>
+
+  <script src = "snake.js"></script>
+</html>
