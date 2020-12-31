@@ -5,8 +5,9 @@
   </head>
 
   <body>
+    <b id = "Title">Snake</b>
     <div id="score">0</div>
-    <canvas id="gameBoard" width="400" height="400">Your browser does not support HTML5</canvas> 
+    <canvas id="gameBoard" width="400" height="400" style="border:5px solid #000000;">Your browser does not support HTML5</canvas> 
     <div id="overlay">
       <div id="text">Overlay Text</div>
       <div id="subText">Sub text</div>
@@ -15,6 +16,23 @@
     <p id = "notes">Use WASD or the arow keys to move<br>Press the space bar to pause and resume the game</p>
     <p id = "notes2">You can press the enter key at anytime to restart<br>Also, the position of the food will move when the game is paused as a form of anti-cheat</p>
     <style>
+      body
+      {
+        background-image: url("Games_Background.jpg");
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+
+      #Title
+      {
+        color: beige;
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 10%;
+        font-size: 75px;
+        transform: rotate(-45deg);
+      }
 
       #gameBoard 
       {
@@ -25,6 +43,7 @@
       }
       #score
       {
+        color: beige;
         text-align: center;
         font-size: 140px;
       }
@@ -66,6 +85,7 @@
 
       #note
     {
+      color: beige;
       position: absolute;
       text-align: center;
       top: 80%;
@@ -76,6 +96,7 @@
 
     #notes
     {
+      color: beige;
       position: absolute;
       text-align: center;
       top: 84%;
@@ -86,6 +107,7 @@
 
     #notes2
     {
+      color: beige;
       position: absolute;
       text-align: center;
       top: 89.5%;
